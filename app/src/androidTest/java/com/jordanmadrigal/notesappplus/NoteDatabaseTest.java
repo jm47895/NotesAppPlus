@@ -16,7 +16,6 @@ import org.junit.Before;
 public abstract class NoteDatabaseTest {
 
     private NoteDatabase noteDatabase;
-    Note note = TestUtil.NOTE;
 
     public NoteDao getNoteDao(){
         return noteDatabase.getNoteDao();
