@@ -1,10 +1,11 @@
-package com.jordanmadrigal.notesappplus;
+package com.jordanmadrigal.notesappplus.ui.notelist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 
+import com.jordanmadrigal.notesappplus.R;
 import com.jordanmadrigal.notesappplus.repository.NoteRepository;
 
 import javax.inject.Inject;

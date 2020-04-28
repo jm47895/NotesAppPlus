@@ -1,6 +1,6 @@
 package com.jordanmadrigal.notesappplus.di;
 
-import com.jordanmadrigal.notesappplus.NotesListActivity;
+import com.jordanmadrigal.notesappplus.ui.notelist.NotesListActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
