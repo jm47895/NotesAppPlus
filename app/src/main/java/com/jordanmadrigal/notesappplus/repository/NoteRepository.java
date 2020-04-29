@@ -42,6 +42,7 @@ public class NoteRepository {
     }
 
     public Flowable<Resource<Integer>> insertNote(final Note note) throws Exception{
+
         checkTitle(note);
 
         return noteDao.insertNote(note)
