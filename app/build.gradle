@@ -62,7 +62,7 @@ dependencies {
 
 
     // -------- MOCKITO
-    def mockito_version = "2.19.0"
+    def mockito_version = "2.24.0"
     testImplementation "org.mockito:mockito-core:$mockito_version"
 
     // Dagger
