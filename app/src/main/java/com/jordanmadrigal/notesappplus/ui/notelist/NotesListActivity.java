@@ -2,11 +2,13 @@ package com.jordanmadrigal.notesappplus.ui.notelist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.jordanmadrigal.notesappplus.R;
 import com.jordanmadrigal.notesappplus.repository.NoteRepository;
+import com.jordanmadrigal.notesappplus.ui.note.NoteActivity;
 
 import javax.inject.Inject;
 
@@ -16,14 +18,14 @@ public class NotesListActivity extends DaggerAppCompatActivity {
 
     private static final String TAG = "NotesListActivity";
 
-    @Inject
-    NoteRepository noteRepository;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes_list);
 
-        Log.d(TAG, "THIS IS THE NOTE REPOSITORY" + noteRepository);
+        Intent intent = new Intent(this, NoteActivity.class);
+        startActivity(intent);
+
+
     }
 }
