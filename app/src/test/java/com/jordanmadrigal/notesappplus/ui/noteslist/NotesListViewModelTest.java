@@ -5,17 +5,15 @@ import androidx.lifecycle.MutableLiveData;
 import com.jordanmadrigal.notesappplus.models.Note;
 import com.jordanmadrigal.notesappplus.repository.NoteRepository;
 import com.jordanmadrigal.notesappplus.ui.Resource;
-import com.jordanmadrigal.notesappplus.ui.notelist.NoteListViewModel;
+import com.jordanmadrigal.notesappplus.ui.notelist.NotesListViewModel;
 import com.jordanmadrigal.notesappplus.util.InstantExecutorExtension;
 import com.jordanmadrigal.notesappplus.util.LiveDataTestUtil;
 import com.jordanmadrigal.notesappplus.util.TestUtil;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import java.util.ArrayList;
@@ -29,7 +27,7 @@ import static org.mockito.Mockito.*;
 @ExtendWith(InstantExecutorExtension.class)
 public class NotesListViewModelTest {
 
-    private NoteListViewModel viewModel;
+    private NotesListViewModel viewModel;
 
     @Mock
     private NoteRepository noteRepository;
@@ -37,7 +35,7 @@ public class NotesListViewModelTest {
     @BeforeEach
     public void init(){
         MockitoAnnotations.initMocks(this);
-        viewModel = new NoteListViewModel(noteRepository);
+        viewModel = new NotesListViewModel(noteRepository);
     }
 
     //Retrieve a list of notes, observe list, return list

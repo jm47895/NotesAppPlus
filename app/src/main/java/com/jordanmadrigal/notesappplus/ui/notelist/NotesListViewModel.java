@@ -13,7 +13,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-public class NoteListViewModel extends ViewModel {
+public class NotesListViewModel extends ViewModel {
 
     private static final String TAG = "NoteListViewModel";
 
@@ -22,7 +22,7 @@ public class NoteListViewModel extends ViewModel {
     private MediatorLiveData<List<Note>> notes = new MediatorLiveData<>();
 
     @Inject
-    public NoteListViewModel(NoteRepository noteRepository) {
+    public NotesListViewModel(NoteRepository noteRepository) {
         this.noteRepository = noteRepository;
     }
 

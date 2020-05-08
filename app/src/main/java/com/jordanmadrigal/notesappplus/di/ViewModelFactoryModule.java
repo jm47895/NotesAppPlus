@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.jordanmadrigal.notesappplus.ui.note.NoteViewModel;
-import com.jordanmadrigal.notesappplus.ui.notelist.NoteListViewModel;
+import com.jordanmadrigal.notesappplus.ui.notelist.NotesListViewModel;
 import com.jordanmadrigal.notesappplus.viewmodels.ViewModelProviderFactory;
 
 import dagger.Binds;
@@ -24,6 +24,6 @@ public abstract class ViewModelFactoryModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(NoteListViewModel.class)
-    public abstract ViewModel bindNoteListViewModel(NoteListViewModel noteListViewModel);
+    @ViewModelKey(NotesListViewModel.class)
+    public abstract ViewModel bindNoteListViewModel(NotesListViewModel notesListViewModel);
 }
